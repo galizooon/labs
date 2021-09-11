@@ -1,7 +1,7 @@
 /*
  * main.cpp
  *
- *  Created on: 11 сент. 2021 г.
+ *  Created on: 11 пїЅпїЅпїЅпїЅ. 2021 пїЅ.
  *      Author: semyo
  */
 #include<iostream>
@@ -11,40 +11,39 @@ int main()
 	int choise;
 	do{
 	menu_retry:
-	std::cout<<"         МАГАЗИН\n"
+	std::cout<<"         РњРђР“РђР—РРќ\n"
 			   "        ------------\n"
-			   "        1.Яблоки\n"
-			   "        2.Груши\n"
-			   "        3.Апельсины\n"
-			   "        0.Выход\n";
+			   "        1.РЇР±Р»РѕРєРё\n"
+			   "        2.Р“СЂСѓС€Рё\n"
+			   "        3.РђРїРµР»СЊСЃРёРЅС‹\n"
+			   "        0.Р’С‹С…РѕРґ\n";
 
 
-	if (not(std::cin>>choise)){std::cout<<"Неккоректный ввод\nТребуется ввести число"<<std::endl;
+	if (not(std::cin>>choise)){std::cout<<"РќРµРєРєРѕСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ\nРўСЂРµР±СѓРµС‚СЃСЏ РІРІРµСЃС‚Рё С‡РёСЃР»Рѕ"<<std::endl;
 	std::cin.clear();
 	std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
 	goto menu_retry;
 	}
 	switch(choise){
 	case 0:
-		std::cout<<"До свидания!"<<std::endl;
+		std::cout<<"Р”Рѕ СЃРІРёРґР°РЅРёСЏ!"<<std::endl;
 		break;
 	case 1:
-		std::cout<<"Заберите ваши яблоки"<<std::endl;
+		std::cout<<"Р—Р°Р±РµСЂРёС‚Рµ РІР°С€Рё СЏР±Р»РѕРєРё"<<std::endl;
 		break;
 	case 2:
-		std::cout<<"Заберите ваши груши"<<std::endl;
+		std::cout<<"Р—Р°Р±РµСЂРёС‚Рµ РІР°С€Рё РіСЂСѓС€Рё"<<std::endl;
 		break;
 	case 3:
-		std::cout<<"Заберите ваши апельсины"<<std::endl;
+		std::cout<<"Р—Р°Р±РµСЂРёС‚Рµ РІР°С€Рё Р°РїРµР»СЊСЃРёРЅС‹"<<std::endl;
 		break;
 	default:
-		std::cout<<"Такого пункта нет"<<std::endl;
+		std::cout<<"РўР°РєРѕРіРѕ РїСѓРЅРєС‚Р° РЅРµС‚"<<std::endl;
 
 	}
 	}while (choise!=0);
 	return 0;
 }
-
 
 
 
